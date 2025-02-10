@@ -5,13 +5,13 @@
 //Retorne el nuevo array modificado.
 
 function aplicarImpuestos(productos) {
-    return productos.map(producto => {
-        let nuevoProducto = { ...producto };
-        if (nuevoProducto.precio > 50) {
-            nuevoProducto.precio *= 1.1; 
-        }
-        return nuevoProducto;
-    });
+    return productos
+        .filter(producto => producto.precio > 50)
+        .map(producto => {
+            let nuevoProducto = { ...producto };
+            nuevoProducto.precio *= 1.1;
+            return nuevoProducto;
+        });
 }
 
 const productos = [
