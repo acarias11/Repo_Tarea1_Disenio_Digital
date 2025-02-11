@@ -22,7 +22,7 @@ function combinarUsuarios(usuarios, detalles) {
     return Array.from(fusion.values());
 }
 
-// Ejemplo de uso:
+
 const usuarios = [
     { id: 1, nombre: 'Kendrick' },
     { id: 2, nombre: 'Juan Orlando' },
